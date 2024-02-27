@@ -1,0 +1,886 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #f8f7f4;
+}
+
+#page1{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    font-family: "Mona Sans";
+}
+
+#navpt1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navpt1 h4{
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+nav>i{
+    display: none;
+}
+
+nav img{
+    height: 100%;
+    
+}
+
+#navpt2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navpt2 button{
+    padding: 15px 22px;
+    font-size: 0.9vw;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#navpt2 button:nth-child(2){
+    background-color: transparent;
+    color: rgb(68, 67, 67);
+}
+
+#search input{
+    padding: 16px 28px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+}
+
+#search input::placeholder{
+    font-size: 1vw;
+}
+
+#search i{
+    font-size: 1vw;
+    opacity: 0.7;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: blue; */
+    font-family: "Mona Sans";
+    padding-top: 10vh;
+
+}
+
+#content h3{
+    font-size: 1vw;
+    width: fit-content;
+    background-color: lightpink;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 15px;
+    letter-spacing: 1px;
+    /* margin-top: 10vh; */
+}
+
+#content h1{
+    font-family: 'source serif 4';
+    font-size: 4.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+#content h2{
+    width: fit-content;
+    margin-top: 4vh;
+    font-size: 1.3vw;
+    font-weight: 600;
+    background-color: rgb(248, 223, 168);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+    padding: 1vh 0;
+}
+
+#content button{
+    padding: 15px 18px;
+    margin-top: 4vh;
+    font-size: 0.9vw;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+}
+
+#bottom{
+    width: 100%;
+    height: 50vh;
+    font-family: 'Mona Sans';
+    /* background-color: coral; */
+    /* padding: 1vw 0; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    /* background-color: cornflowerblue; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#container .elem{
+    height: 100%;
+    width: 18vw;
+    background-color: crimson;
+    /* border: 2px solid black; */
+    display: inline-block;
+    border-radius: 25px;
+    margin-right: 1.5vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#container .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#container .elem video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#container .elem .text{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    padding: 1vw ;
+    /* background-color: aliceblue; */
+}
+
+#container .elem .text h5{
+    font-size: 0.8vw;
+    font-weight: 900;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#container .elem .text button{
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+#page2{
+    width: 100%;
+    
+    /* background-color: coral;  */
+    padding: 7vw;
+    position: relative;
+}
+
+#page2 h1{
+    text-align: center;
+    font-family: 'Source Serif 4';
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 3vw;
+}
+
+#page2 .box{
+    width: 20vw;
+    height: 15vw;
+    border-radius: 10px;
+    background-color: crimson;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+#page2 .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page2 .box .btm{
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.556));
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 1vw;
+}
+
+#page2 .box:hover .btm{
+    opacity: 1;
+}
+
+#page2 .box .btm i{
+    padding: 10px 11px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 1.2vw;
+}
+
+#page2 .box .btm i:nth-last-child(2){
+    margin-right: 0.8vw;
+}
+
+#page2 .box .btm h5{
+    font-family: 'Mona Sans';
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: white;
+    width: 70%;
+}
+
+#page2 button{
+    margin-left: 42%;
+    margin-top: 2vw;
+    padding: 16px 22px;
+    background-color: transparent;
+    font-size: 1vw;
+    font-family: 'Mona Sans';
+    font-weight: 700;
+    border-radius: 50px;
+    
+}
+
+#page3{
+    width: 100%;
+    height: 100%;
+    background-color: #fdda71;
+    padding: 8vw 0;
+}
+
+#notice{
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#notice h1{
+    font-family: 'Source Serif 4';
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 5vw;
+}
+
+#notice h3{
+    font-family: 'Mona Sans';
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1vw;
+    line-height: 3vw;
+}
+
+#notice button{
+    padding: 16px 22px;
+    background-color: white;
+    font-size: 1vw;
+    font-family: 'Mona Sans';
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+}
+
+#notice button:hover{
+    background-color: black;
+    color: white;
+}
+
+#notice h4 a{
+    color: black;
+}
+
+#notice h4{
+    font-family: 'Mona Sans';
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 40%;
+    /* background-color: darkmagenta; */
+}
+
+#nav2{
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    padding: 3vw 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top{
+    width: 100%;
+    height: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top #links{
+    display: flex;
+    gap: 3vw;
+}
+
+#top #links h6{
+    font-family: 'Mona Sans';
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+#top #icons i{
+    font-size: 1.3vw;
+    margin-right: 0.5vw;
+}
+
+#top img{
+    height: 100%;
+}
+
+#down{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(18, 100, 72); */
+}
+
+#left{
+    display: flex;
+    gap: 1vw;
+}
+
+#down #left h6{
+    font-family: 'Mona Sans';
+    font-size: 1vw;
+    font-weight: 700;
+    color: rgb(105, 104, 104);
+}
+
+#right{
+    display: flex;
+    gap: 1vw;
+}
+
+#down #right h6{
+    font-family: 'Mona Sans';
+    font-size: 1vw;
+    font-weight: 700;
+    color: rgb(105, 104, 104);
+
+}
+
+@media (max-width:600px) {
+    #page1{
+        width: 100%;
+        height: 100%;
+    }
+    
+    nav{
+        width: 100%;
+        height: 100px;
+        /* background-color: brown; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2vw;
+        font-family: "Mona Sans";
+    }
+    
+    #navpt1{
+        display: none;
+    }
+    
+    nav>i{
+        display: initial;
+        font-size: 6vw;
+    }
+    
+    nav img{
+        height: 100%;
+        width: 40%;
+        
+    }
+    
+    #navpt2{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #navpt2 button{
+        padding: 13px 24px;
+        font-size: 3.5vw;
+        font-weight: 600;
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        border: none;
+    }
+    
+    #navpt2 button:nth-child(2){
+        display: none;
+    }
+    
+    #search input{
+        display: none;
+        
+    }
+    
+    #search i{
+        font-size: 6vw;
+        opacity: 0.7;
+    }
+
+    #content{
+        width: 100%;
+        height: calc(100% - 100px);
+        /* background-color: blue; */
+        font-family: "Mona Sans";
+        padding-top: 10vh;
+    }
+    
+    #content h3{
+        font-size: 4vw;
+        font-weight: 800;
+        width: fit-content;
+        background-color: lightpink;
+        border-radius: 50px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 12px 15px;
+        letter-spacing: 1px;
+        /* margin-top: 10vh; */
+    }
+    
+    #content h1{
+        font-family: 'source serif 4';
+        font-size: 12.5vw;
+        font-weight: 500;
+        line-height: 14vw;
+        text-align: center;
+        margin-top: 6vh;
+    }
+    
+    #content h2{
+        width: 95%;
+        font-size: 5.3vw;
+        text-align: center;
+        line-height: 8vw;
+        font-weight: 600;
+        background-color: transparent;
+    }
+    
+    #content button{
+        padding: 20px 24px;
+        margin-top: 4vh;
+        font-size: 3.9vw;
+    }
+
+    #bottom{
+        width: 100%;
+        height: 30vh;
+        font-family: 'Mona Sans';
+        /* background-color: coral; */
+        /* padding: 1vw 0; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #container{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        padding: 0 2vw;
+        /* background-color: cornflowerblue; */
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        animation: none;
+    }
+
+    #bottom::-webkit-scrollbar{
+        color: orange;
+    }
+    
+    #container .elem{
+        height: 100%;
+        width: 50vw;
+        /* background-color: crimson; */
+        /* border: 2px solid black; */
+        display: inline-block;
+        border-radius: 25px;
+        margin-right: 1.5vw;
+        overflow: -moz-hidden-unscrollable;
+        position: relative;
+    }
+    
+    #container .elem img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #container .elem video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+    }
+    
+    #container .elem .text{
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        padding: 1vw ;
+        /* background-color: aliceblue; */
+    }
+    
+    #container .elem .text h5{
+        font-size: 3vw;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    #container .elem .text button{
+        padding: 4px 7px;
+        font-size: 3vw;
+        border: 1px solid white;
+        border-radius: 50px;
+        background-color: transparent;
+        color: white;
+        font-weight: 700;
+    }
+
+    #page2{
+        width: 100%;
+        
+        /* background-color: coral;  */
+        padding: 7vw;
+        position: relative;
+    }
+    
+    #page2 h1{
+        text-align: center;
+        font-family: 'Source Serif 4';
+        font-size: 8vw;
+        font-weight: 500;
+        margin-bottom: 6vw;
+    }
+    
+    #page2 .box{
+        width: 80vw;
+        height: 70vw;
+        border-radius: 10px;
+        background-color: crimson;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+    
+    #page2 .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #page2 .box .btm{
+        width: 100%;
+        height: 30%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.556));
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: all ease 0.3s;
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        padding: 0 1vw;
+    }
+    
+    #page2 .box:hover .btm{
+        opacity: 1;
+    }
+    
+    #page2 .box .btm i{
+        padding: 10px 11px;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 4.2vw;
+    }
+    
+    #page2 .box .btm i:nth-last-child(2){
+        margin-right: 0.8vw;
+    }
+    
+    #page2 .box .btm h5{
+        font-family: 'Mona Sans';
+        font-size: 5.2vw;
+        font-weight: 700;
+        color: white;
+        width: 70%;
+    }
+    
+    #page2 button{
+        margin-left: 22%;
+        margin-top: 2vw;
+        padding: 16px 22px;
+        background-color: transparent;
+        font-size: 3vw;
+        font-family: 'Mona Sans';
+        font-weight: 900;
+        border-radius: 50px;
+        
+    }
+
+    #page3{
+        width: 100%;
+        height: 100%;
+        background-color: #fdda71;
+        padding: 25vw 0;
+    }
+    
+    #notice{
+        width: 100%;
+        height: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #notice h1{
+        font-family: 'Source Serif 4';
+        font-size: 12vw;
+        font-weight: 500;
+        line-height: 14vw;
+    }
+    
+    #notice h3{
+        font-family: 'Mona Sans';
+        font-size: 6.5vw;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1vw;
+        line-height: 8vw;
+    }
+    
+    #notice button{
+        padding: 16px 22px;
+        background-color: white;
+        font-size: 4vw;
+        font-family: 'Mona Sans';
+        font-weight: 700;
+        border-radius: 50px;
+        border: none;
+    }
+    
+    #notice button:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    #notice h4 a{
+        color: black;
+    }
+    
+    #notice h4{
+        font-family: 'Mona Sans';
+        font-size: 5.5vw;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    footer{
+        width: 100%;
+        height: 40%;
+        padding-bottom: 5vw;
+        /* background-color: darkmagenta; */
+    }
+    
+    #nav2{
+        width: 100%;
+        height: 100%;
+        /* background-color: white; */
+        padding: 3vw 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #top{
+        width: 100%;
+        height: 40%;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #top #links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+    
+    #top #links h6{
+        font-family: 'Mona Sans';
+        font-size: 4vw;
+        font-weight: 700;
+    }
+
+    #top #links h6:nth-child(1){
+        display: none;
+    }
+
+    #top #links h6:nth-child(2){
+        display: none;
+    }
+
+    #top #icons{
+        margin-top: 3vw;
+    }
+    
+    #top #icons i{
+        font-size: 5.3vw;
+        margin-right: 2.5vw;
+    }
+    
+    #top img{
+        height: 100%;
+    }
+    
+    #down{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: rgb(18, 100, 72); */
+    }
+    
+    #left{
+        display: flex;
+        gap: 1vw;
+    }
+    
+    #down #left h6{
+        font-family: 'Mona Sans';
+        font-size: 4vw;
+        font-weight: 700;
+        color: rgb(105, 104, 104);
+    }
+    
+    #right{
+        display: flex;
+        gap: 1vw;
+    }
+    
+    #down #right h6{
+        font-family: 'Mona Sans';
+        font-size: 4vw;
+        font-weight: 700;
+        color: rgb(105, 104, 104);
+    
+    }
+}
